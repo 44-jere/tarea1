@@ -177,9 +177,9 @@ public class CarreraFrame extends JFrame implements HiloSemaforo.SemaforoListene
         SwingUtilities.invokeLater(() -> {
             panelSemaforo.setEstado(estado);
             switch (estado) {
-                case VERDE    -> lblEstado.setText("¡Luz VERDE! — Los caballos corren (30s)");
-                case AMARILLO -> lblEstado.setText("Luz AMARILLA — Los caballos desaceleran...");
-                case ROJO     -> lblEstado.setText("Luz ROJA — ¡Carrera terminada!");
+                case VERDE:    lblEstado.setText("¡Luz VERDE! — Los caballos corren (30s)"); break;
+                case AMARILLO: lblEstado.setText("Luz AMARILLA — Los caballos desaceleran..."); break;
+                case ROJO:     lblEstado.setText("Luz ROJA — ¡Carrera terminada!"); break;
             }
         });
 
